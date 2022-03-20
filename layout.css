@@ -1,0 +1,111 @@
+* {
+	box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #FFFF99;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+div {
+	width: 300px;
+	border-radius: 10px;
+	background-color: #FFFFCC;
+	padding: 10px;
+}
+
+input[type=text], select {
+	width: 90%;
+	padding: 10px;
+	margin: 30px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	
+}
+
+input[type=submit] {
+	width: 100%;
+	background-color: green;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: 45a049;
+}
+
+
+header {
+	background-color: #666;
+	padding: 30px;
+	text-align: center;
+	font-size: 35px;
+	color: white;
+	background-image: url("b275022_polska_woj_wielkopolskie_gdzies_daleko_za_nowym_miastem_n_warta.jpg");
+	background-size: cover;
+	
+}
+
+section {
+	display: flex;
+}
+
+nav {
+font-size: 20px;
+	flex: 1;
+	background: #FFFF99;
+	padding: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+}
+
+article img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+article {
+	
+	padding: 20px;
+	flex: 5;
+	background-color: #FFFFCC;
+
+}
+
+section::after {
+	display: table;
+	clear: both;
+}
+
+footer {
+	background-color:#CCCC33;
+	padding: 20px;
+	text-align: center;
+	color: black;
+}
+
+@media (max-width: 600px) {
+	section {
+		flex-direction: column;
+	}
+}
